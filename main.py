@@ -1,5 +1,5 @@
-from Lesson3 import Character
-from Berserk import Vampyre
+from Lesson_2.character import Character
+from berserk import Vampyre
 
 player1 = Character('Vasya', health=100, damage=1)
 player2 = Vampyre("Vampyre",health=100,damage=1)
