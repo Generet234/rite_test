@@ -1,4 +1,4 @@
-from Lesson_2.character import Character
+from main import Character
 from berserk import Vampyre
 
 player1 = Character('Vasya', health=100, damage=1)
