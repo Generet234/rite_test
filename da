@@ -1,0 +1,15 @@
+from character import Character
+import datetime
+datetime.date.today().year
+player1 = Character('Vasya', birth_year = 2001)
+player2 = Character('Petya',birth_year = 2000 )
+
+print(player1)
+print(player2)
+
+while player1.birth_year > 0 and player2.birth_year > 0:
+    player1.avg_mark(player2)
+    player2.avg_mark(player1)
+
+    print(player1)
+    print(player2)
