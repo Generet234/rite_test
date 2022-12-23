@@ -1,7 +1,7 @@
 from Lesson_2.character import Character
 
 
-class Berserk(Character):
+class Vampyre(Character):
     max_health = 100
 
     def __init__(self, name, health=100, damage=1, defence=0):

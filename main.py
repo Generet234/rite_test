@@ -1,18 +1,27 @@
-from Lesson_2.character import Character
-from berserk import Berserk
+from Lesson3 import Character
+from Berserk import Vampyre
 
 player1 = Character('Vasya', health=100, damage=1)
-player2 = Berserk('Petya', health=50, damage=2)
+player2 = Vampyre("Vampyre",health=100,damage=1)
 
 print(player1)
 print(player2)
 
-while player1.health > 0 and player2.health > 0:
+while player1.health > 0 and player2.health > 20:
     player1.attack(player2)
     character_damage = player1.damage
-    berserk_damage = player2.attack(player1)
+    vampyre_damage = player2.attack(player1)
 
     print(f'{player1.name} нанёс {character_damage} урона.')
-    print(f'{player2.name} нанёс {berserk_damage} урона.')
+    print(f'{player2.name} нанёс {vampyre_damage} урона.')
+    print(player1)
+    print(player2)
+while player2.health<20 and player2.health>0:
+    player1.attack(player2)
+    character_damage = player1.damage * 0
+    vampyre_damage = player2.attack(player1)
+
+    print(f'{player1.name} не нанёс {character_damage} урона.')
+    print(f'{player2.name} нанёс {vampyre_damage} урона.')
     print(player1)
     print(player2)
